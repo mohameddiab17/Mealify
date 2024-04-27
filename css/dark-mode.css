@@ -1,0 +1,78 @@
+:root:has(.mode input:checked) {
+    --main-color: #c17e1f;
+    --secondary-color: #fff;
+    --color-tertiary: #9f9f9f;
+    --color-light-gray: #252525;
+    --color-dark-gray: #171717;
+}
+
+body:has(.mode input:checked) .mode .dark {
+    display: none;
+}
+
+body:has(.mode input:checked) .mode .light {
+    color: var(--secondary-color);
+    display: block;
+}
+
+body:has(.mode input:checked) nav {
+    background-color: var(--color-dark-gray);
+}
+
+body:has(.mode input:checked) nav a {
+    color: var(--secondary-color);
+}
+
+body:has(.mode input:checked) p {
+    color: var(--secondary-color);
+}
+
+body:has(.mode input:checked) .video-btn span{
+    color: var(--secondary-color);
+}
+
+body:has(.mode input:checked) nav ul li a {
+    color: var(--color-tertiary);
+}
+
+body:has(.mode input:checked) nav a:hover
+{
+    color: var(--secondary-color);
+}
+
+body:not(:has(:target)):has(.mode input:checked) .home-link:hover,
+body:has(.home:target):has(.mode input:checked) .home-link:hover,
+body:has(.about:target):has(.mode input:checked) .about-link:hover,
+body:has(.gallery:target):has(.mode input:checked) .gallery-link:hover,
+body:has(.contact:target):has(.mode input:checked) .contact-link:hover
+{
+    color: var(--secondary-color);
+}
+body:has(.mode input:checked)
+{
+    .about {
+        background-color: #202020;
+    };
+    .about-cap h2 ,.chefs-content h3{
+        color: var(--secondary-color);
+    };
+    .about-imgs{
+        background-color: #171717;
+        border-radius: 10px;
+    }
+}
+body:has(.mode input:checked)
+{
+    .gallery-cap h2{
+        color: var(--secondary-color);
+    }
+    .contact{
+        background-color: #202020;
+    }
+    .same-fea a {
+        color: var(--secondary-color);
+    }
+    .contact-cap h2{
+        color: var(--secondary-color);
+    }
+}
