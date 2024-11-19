@@ -17,4 +17,3 @@ A modern web application that provides users with an easy way to discover, explo
 
 ---
 
-Let me know if you'd like assistance crafting a LinkedIn post or further customization for this project!
